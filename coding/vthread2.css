@@ -36,6 +36,7 @@ vthread1 topcolor .content {
   font:15px var(--sans);
   padding:20px;
   line-height:160%;
+  text-align:justify;
 }
 
 vthread1 topcolor .content b {
