@@ -1,0 +1,64 @@
+vthread1 {
+    position: relative;
+    display:block;
+    margin:30px auto;
+    width:500px;
+    background: rgba(var(--bgelev1),1);
+    border-radius:20px;
+    box-shadow:0 0 10px 0 rgba(var(--shadow),0.25);
+    overflow:hidden;
+}
+
+vthread1 top {
+  display:flex;
+  flex-flow:row;
+  justify-content: center;
+  align-items: center;
+  padding:20px;
+  font:29px var(--display);
+  text-decoration-line: underline;
+  text-decoration-color: var(--fontaccent2);
+  text-decoration-style: wavy;
+}
+
+vthread1 topcolor {
+  position:relative;
+  display:block;
+  margin:0px 0;
+  padding:50px;
+  width:100%;
+  background-color: rgba(var(--bgelev1));
+  background-image: linear-gradient(to top right, var(--pastelgradient1));
+  background-blend-mode: var(--blendmode);
+}
+
+vthread1 topcolor .content {
+  font:15px var(--sans);
+  padding:20px;
+  line-height:160%;
+}
+
+vthread1 topcolor .content b {
+  color:var(--fontaccent2);
+  background:rgba(var(--bgelev1),1);
+  padding:5px;
+  border-radius:5px;
+}
+
+vthread1 topcolor .content i {
+  font:17px var(--display);
+  color:var(--fontaccent1);
+  -webkit-text-stroke: 1px rgba(var(--shadow));
+}
+
+vthread1 topcolor .content u {
+  text-decoration-line: underline;
+  text-decoration-color: var(--fontaccent3);
+  text-decoration-style: wavy;
+}
+
+vthread1 topcolor .content a {
+  font:800 17px var(--sans);
+  color:var(--font);
+  text-decoration-color: var(--fontaccent2);
+}
