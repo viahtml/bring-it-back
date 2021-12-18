@@ -1,0 +1,91 @@
+vthread3 {
+  position: relative;
+  display:grid;
+  grid-template-areas:
+    "colorblock-top"
+    "image"
+    "content"
+    "colorblock-bottom";
+  grid-template-rows: auto auto auto auto;
+  margin:30px auto;
+  width:330px;
+  background: rgba(var(--bgelev1),1);
+  border-radius:10px;
+  box-shadow:0 0 10px 0 rgba(var(--shadow),0.25);
+  text-align: justify;
+  overflow:hidden;
+}
+
+vthread3 colorblock {
+  display:flex;
+  flex-flow:row;
+  justify-content: space-between;
+  width:100%;
+  padding:20px;
+  background-color: rgba(var(--bgelev1));
+  background-image: linear-gradient(to right, var(--pastelgradient1));
+  background-blend-mode: var(--blendmode);
+}
+
+vthread3 colorblock.top {
+  grid-area:colorblock-top;
+}
+
+vthread3 img {
+  grid-area:image;
+  width:100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+vthread3 .content {
+  grid-area:content;
+  margin:30px;
+  padding:20px;
+}
+
+vthread3 .content overflow {
+  display:block;
+  padding-right:10px;
+  max-height:250px;
+  overflow:scroll;
+}
+
+vthread3 .content p {
+  text-indent:10px;
+  font-size:14px;
+}
+
+vthread3 .content p::first-letter {
+  font:800 italic 20px var(--sans);
+  color:var(--fontaccent4);
+}
+
+vthread3 .content b {
+  font:800 15px var(--sans);
+  color:var(--fontaccent2);
+}
+
+vthread3 .content i {
+  font:800 italic 15px var(--sans);
+  color:var(--fontaccent3);
+}
+
+vthread3 .content u {
+  font:600 14px var(--sans);
+  color:var(--fontaccent1);
+}
+
+vthread3 .content a {
+  font:600 italic 14px var(--sans);
+  color:var(--fontaccent4);
+}
+
+vthread3 colorblock.bottom {
+  grid-area:colorblock-bottom;
+}
+
+vthread3 colorblock.bottom span {
+  font:800 15px var(--sans);
+  text-transform:uppercase;
+}
