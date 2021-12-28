@@ -50,10 +50,11 @@ vthread5-in .sticky {
   position:sticky;
   top:0;
   align-self: start;
+  margin-top: -170px;
 }
 
 vthread5-in .sticky img {
-  margin:30px 30px 30px 10px;
+  margin:200px 30px 30px 10px;
   width:200px;
   height:300px;
   object-fit:cover;
@@ -89,4 +90,11 @@ vthread5 .content u {
 vthread5 .content a {
   font:600 14px var(--sans);
   color:var(--fontaccent4);
+}
+
+vthread5-in .jaswave7, vthread5-in .jaswave8 {
+position: absolute;
+    opacity: 0.3;
+    bottom: 0;
+    height: 100px;
 }
