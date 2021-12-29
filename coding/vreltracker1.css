@@ -1,0 +1,207 @@
+vreltracker {
+  position:relative;
+  display:block;
+  margin:0px auto;
+  width:650px;
+  padding:5px;
+  background:rgba(var(--bgelev1),1);
+  border-radius:10px;
+  box-shadow:0 0 10px 0 rgba(var(--shadow),0.25);
+  text-align: justify;
+}
+
+vreltracker-in {
+  position:relative;
+  display:grid;
+  grid-template-areas:
+    "trackername trackerimg"
+    "content content";
+  grid-template-rows: 150px 700px;
+  grid-template-columns: auto auto;
+  grid-gap:10px;
+  margin:15px;
+  background-color: rgba(var(--bgelev1));
+  background-image: linear-gradient(to top right, var(--pastelgradient1));
+  background-blend-mode: var(--blendmode);
+  border-radius:10px;
+  overflow:hidden;
+}
+
+vreltracker-in .jaswave2 {
+  position:absolute;
+  width:150%;
+  z-index:0;
+}
+
+vreltracker-in trackername {
+  grid-area:trackername;
+  align-content: center;
+  position: relative;
+  display:flex;
+  flex-flow:row;
+  justify-content: center;
+  align-items: center;
+  margin:30px 30px 55px;
+  font:25px var(--display);
+  text-transform:lowercase;
+  background:rgba(var(--bgelev1));
+  border-radius:10px;
+  box-shadow:0 0 10px 0 rgba(var(--shadow),0.25);
+}
+
+vreltracker-in trackername span {
+  background: linear-gradient(to right, var(--fontgradient));
+  -webkit-background-clip: text;
+  color:rgba(var(--bgelev1),0);
+}
+
+vreltracker-in trackerimg {
+  grid-area:trackerimg;
+  justify-self:end;
+  align-self:center;
+  position: relative;
+  margin:15px;
+  padding:10px;
+  background:rgba(var(--bgelev1));
+  border-radius:10px;
+  box-shadow:0 0 10px 0 rgba(var(--shadow),0.25);
+}
+
+vreltracker-in trackerimg img {
+  width:100px;
+  height:100px;
+  object-fit: cover;
+  object-position: center center;
+  border-radius:5px;
+}
+
+vreltracker-in .content {
+  grid-area:content;
+  margin:20px;
+  padding:20px;
+  background:rgba(var(--bgelev2));
+  border-radius:10px;
+  box-shadow:0 0 10px 0 rgba(var(--shadow),0.25);
+}
+
+vreltracker-in .content overflow {
+  grid-area:content;
+  display:block;
+  max-height:620px;
+  overflow:auto;
+}
+
+vreltracker-in .content .relationship-block {
+  grid-area:content;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap:15px;
+}
+
+vreltracker-in .content h1 {
+  grid-column: 1 / -1;
+  text-transform:lowercase;
+  font-weight:800;
+  font-style:italic;
+  text-decoration: underline;
+  color:var(--fontaccent2);
+}
+
+vreltracker-in .content .description {
+  grid-column: 1 / -1;
+  padding:20px;
+  background:rgba(var(--bgelev1));
+  border-radius:10px;
+  overflow:auto;
+}
+
+vreltracker-in .content .description b {
+  font:800 15px var(--sans);
+  background:linear-gradient(to right, var(--fontgradient));
+  -webkit-background-clip:text;
+  color:rgba(var(--bgelev1),0);
+}
+
+vreltracker-in .content .description i {
+  font:400 italic 15px var(--sans);
+  color:var(--fontaccent3);
+}
+
+vreltracker-in .content .description u {
+  font:600 14px var(--display);
+}
+
+vreltracker-in .content .description a {
+  font:600 14px var(--sans);
+  color:var(--fontaccent4);
+}
+
+vreltracker-in .content .relationship-block relationship {
+  display:grid;
+  grid-template-areas:
+    "faicon image"
+    "bio bio";
+  grid-template-rows:50px 150px;
+  grid-template-columns: 1fr 1fr;
+  padding:20px;
+  background-color: rgba(var(--bgelev1));
+  background-image: linear-gradient(to top right, var(--pastelgradient1));
+  background-blend-mode: var(--blendmode);
+  border:5px solid rgba(var(--bgelev1));
+  border-radius:15px;
+  overflow:hidden;
+}
+
+vreltracker-in .content .relationship-block relationship.long {
+  grid-column: 1 / -1;
+}
+
+
+vreltracker-in .content relationship i.fad {
+  grid-area:faicon;
+  justify-self:start;
+  align-self: center;
+  padding:10px;
+  background:rgba(var(--bgelev1));
+  border-radius:5px;
+}
+
+vreltracker-in .content relationship i::before {
+    color: var(--fontaccent4);
+}
+
+vreltracker-in .content relationship i::after {
+    color: var(--fontaccent4);
+    opacity: 0.3;
+}
+
+vreltracker-in .content relationship img {
+  grid-area:image;
+  width:65px;
+  height:65px;
+  object-fit: cover;
+  object-position: center center;
+  justify-self: end;
+  align-self: center;
+  border:5px solid rgba(var(--bgelev1));
+  border-radius:10px;
+}
+
+vreltracker-in .content relationship .bio {
+  grid-area: bio;
+  margin-top:20px;
+  padding:10px;
+  background:rgba(var(--bgelev1));
+  border-radius:5px;
+}
+
+vreltracker-in .content relationship .bio name {
+  display:block;
+  margin-bottom:10px;
+  padding:15px;
+  color:var(--fontaccent1);
+  font:800 15px var(--sans);
+  text-align:center;
+  background:rgba(var(--bgelev2));
+  border-radius:5px;
+}
