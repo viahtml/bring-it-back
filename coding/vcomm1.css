@@ -136,7 +136,7 @@ vcomm1 maincontent u {
 vcomm1 maincontent a {
   font-weight:800;
   font-style:italic;
-  color:var(--fontaccent3);
+  color:var(--fontaccent3)!important;
 }
 
 vcomm1 maincontent send {
@@ -176,4 +176,28 @@ vcomm1 sidebar img {
   height:50px;
   border:1px solid rgba(var(--bgelev1));
   border-radius:5px;
+}
+
+.postwr:nth-child(even) vcomm1 {
+  direction:rtl;
+}
+
+.postwr:nth-child(even) vcomm1 maincontent topbuttons,
+.postwr:nth-child(even) vcomm1 maincontent .msgs,
+.postwr:nth-child(even) vcomm1 maincontent .call,
+.postwr:nth-child(even) vcomm1 maincontent send {
+  direction: ltr;
+}
+
+.postwr:nth-child(even) vcomm1 maincontent contact i.fad {
+  right:-10px;
+}
+
+.postwr:nth-child(even) vcomm1 maincontent .msgs p {
+  float:right;
+}
+
+.postwr:nth-child(even) vcomm1 knob {
+  padding: 50px 0 50px 10px;
+  border-radius:15px 0 0 15px;
 }
