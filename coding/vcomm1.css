@@ -99,6 +99,7 @@ vcomm1 maincontent .msgs, vcomm1 maincontent .call {
   min-height: 50px;
   max-height: 400px;
   font-size:15px;
+  padding-right:10px;
   overflow:auto;
 }
 
@@ -185,7 +186,8 @@ vcomm1 sidebar img {
 .postwr:nth-child(even) vcomm1 maincontent topbuttons,
 .postwr:nth-child(even) vcomm1 maincontent .msgs,
 .postwr:nth-child(even) vcomm1 maincontent .call,
-.postwr:nth-child(even) vcomm1 maincontent send {
+.postwr:nth-child(even) vcomm1 maincontent send,
+.postwr:nth-child(even) vcomm1 maincontent contact {
   direction: ltr;
 }
 
