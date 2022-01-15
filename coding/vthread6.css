@@ -1,0 +1,119 @@
+vthread6 {
+  position:relative;
+  display:grid;
+  grid-template-areas:
+    "topper"
+    "content";
+  grid-template-rows: auto auto;
+  margin:10px auto;
+  width:350px;
+  text-align: justify;
+  background-color: rgba(var(--bgelev1));
+  background-image: linear-gradient(to top right, var(--pastelgradient1));
+  background-blend-mode: var(--blendmode);
+  border-radius:20px;
+  box-shadow:0 0 10px 0 rgba(var(--shadow),0.25);
+  overflow:hidden;
+}
+
+vthread6 topper {
+  grid-area:topper;
+  position:relative;
+  display:flex;
+  flex-flow:column;
+  align-items: center;
+  padding:30px;
+}
+
+vthread6 topper icons {
+  position:relative;
+  display:flex;
+  flex-flow:row;
+  justify-content: space-between;
+}
+
+vthread6 topper icons i {
+  font-size:20px;
+  color:rgba(var(--bgelev1));
+}
+
+vthread6 topper img {
+  margin-top:10px;
+  width:100%;
+  border:1px solid var(--fontaccent1);
+  border-radius:10px;
+}
+
+vthread6 topper img.rectangle {
+  margin:10px auto;
+  width:240px;
+}
+
+vthread6 topper img.square {
+  margin:10px auto;
+  width:130px;
+  height:130px;
+}
+
+vthread6 topper img.circle {
+  margin:10px auto;
+  width:130px;
+  height:130px;
+  border-radius:100%;
+}
+
+vthread6 .content {
+  grid-area:content;
+  padding:50px;
+  background:rgba(var(--bgelev1));
+  border-radius:20px 20px 0 0;
+  box-shadow:0 0 10px 0 rgba(var(--shadow),0.25);
+}
+
+vthread6 .content i {
+  font-size:15px;
+  color:var(--fontaccent2);
+}
+
+vthread6 .content b {
+  font:800 16px var(--sans);
+  color:var(--fontaccent1);
+}
+
+vthread6 .content u {
+  font:16px var(--display);
+  text-decoration-color: var(--fontaccent1);
+}
+
+vthread6 .content a {
+  font:800 10px var(--sans);
+  text-decoration:none;
+  text-transform:uppercase;
+  letter-spacing:1.25px;
+  color:var(--fontaccent3);
+}
+
+vthread6 .content overflow {
+  max-height:300px;
+  padding-right:10px;
+  overflow:auto;
+}
+
+vthread6 tag {
+  position:absolute;
+  bottom:-15px;
+  padding:5px 15px;
+  text-align:center;
+  background-color: rgba(var(--bgelev2));
+  background: hsl(var(--mghue1), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--lightness1) + var(--darken)));
+  background-blend-mode: var(--blendmode);
+  border-radius:20px;
+  box-shadow:0 0 10px 0 rgba(var(--shadow),0.25);
+}
+
+vthread6 tag span, vthread6 tag span a {
+  color:inherit;
+  font:800 12px var(--sans);
+  text-transform:uppercase;
+  text-decoration-color:rgba(var(--bgelev1),0.2);
+}
