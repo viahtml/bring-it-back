@@ -40,7 +40,8 @@ vthread6 topper icons i {
 vthread6 topper img {
   margin-top:10px;
   width:100%;
-  border:1px solid var(--fontaccent1);
+  border: 5px solid rgba(var(--bgelev1));
+  box-shadow: 0 0 10px 0 rgba(var(--shadow),0.25);
   border-radius:10px;
 }
 
