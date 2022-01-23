@@ -1,0 +1,259 @@
+vsocials2 {
+  position:relative;
+  display:grid;
+  grid-template-areas:
+    "topbar"
+    "content";
+  grid-template-rows: 50px auto;
+  margin:10px auto;
+  width:650px;
+  text-align:justify;
+  background:rgba(var(--bgelev1));
+  box-shadow:0 0 10px 0 rgba(var(--shadow),0.25);
+  border-radius:10px;
+}
+
+vsocials2 topbar {
+  grid-area:topbar;
+  padding:20px;
+  display:flex;
+  flex-flow:row;
+  justify-content: space-between;
+  align-items: center;
+  font:800 10px var(--sans);
+  text-transform: uppercase;
+  color: var(--fontaccent4);
+  border-bottom:1px solid rgba(var(--bgelev2));
+}
+
+vsocials2 topbar i {
+  font-size:20px;
+}
+
+vsocials2 .content {
+  grid-area:content;
+  position:relative;
+  display:grid;
+  grid-template-areas:
+    "about posts"
+    "stats posts"
+    "recent posts"
+    "friends friends";
+  grid-template-columns: 250px 400px;
+  grid-template-rows: 200px 100px 300px 200px;
+}
+
+vsocials2 .content about {
+  grid-area:about;
+  position:relative;
+  display:flex;
+  flex-flow:column;
+  justify-content: center;
+  align-items: center;
+  border-bottom:1px solid rgba(var(--bgelev2));
+}
+
+vsocials2 .content about img {
+  width:100px;
+  height:100px;
+  padding:10px;
+  border-radius:100%;
+  background:linear-gradient(to right, var(--pastelgradient1));
+  border:1px solid rgba(var(--bgelev1));
+}
+
+vsocials2 .content about name {
+  margin:7px auto 0;
+  font:20px var(--display);
+  color:var(--fontaccent1);
+  text-align:center;
+  line-height:100%;
+  text-decoration: underline;
+  text-decoration-color: rgba(var(--bgelev3));
+}
+
+vsocials2 .content about qinfo {
+  font:800 10px var(--sans);
+  text-transform: uppercase;
+}
+
+vsocials2 .content stats {
+  grid-area:stats;
+  position:relative;
+  display:flex;
+  flex-flow:column;
+  justify-content: center;
+  border-bottom:1px solid rgba(var(--bgelev2));
+}
+
+vsocials2 .content stats x {
+  margin:7px 20px 0;
+  padding:7px;
+  display:flex;
+  flex-flow:row;
+  justify-content: space-between;
+  align-items: center;
+  font:800 10px var(--sans);
+  text-transform: uppercase;
+  background: rgba(var(--bgelev2));
+  border-radius:5px;
+}
+
+vsocials2 .content stats x i {
+  font-size:13px;
+  color:var(--fontaccent2);
+}
+
+vsocials2 .content recent {
+  display:flex;
+  flex-flow:row wrap;
+  justify-content:space-around;
+  align-items: center;
+}
+
+vsocials2 .content recent img {
+  width:70px;
+  height:70px;
+  padding:5px;
+  background:linear-gradient(to right, var(--pastelgradient1));
+  border-radius:10px;
+}
+
+vsocials2 .content .posts {
+  grid-area:posts;
+  padding:0 20px;
+  border-left:1px solid rgba(var(--bgelev2));
+}
+
+vsocials2 .content .posts i {
+  font-size:14px;
+  color:var(--fontaccent2);
+}
+
+vsocials2 .content .posts b {
+  font:800 14px var(--sans);
+  color:var(--fontaccent1);
+}
+
+vsocials2 .content .posts u {
+  font:14px var(--display);
+  text-decoration-color: var(--fontaccent1);
+}
+
+vsocials2 .content .posts a {
+  font:800 10px var(--sans);
+  text-decoration:none;
+  text-transform:uppercase;
+  letter-spacing:1.25px;
+  color:var(--fontaccent3);
+}
+
+vsocials2 .content .posts posts {
+  display:flex;
+  flex-flow:column;
+  align-items: flex-start;
+  margin:20px 0 30px;
+}
+
+vsocials2 .content .posts posts x {
+  padding:5px;
+  margin-bottom:5px;
+  background:linear-gradient(to right, var(--pastelgradient1));
+  font:800 10px var(--sans);
+  text-transform: uppercase;
+  border-radius:5px;
+}
+
+vsocials2 .content .posts posts .status {
+  max-height:100px;
+  background: rgba(var(--bgelev2));
+  padding:0 20px;
+  border-top:20px solid rgba(var(--bgelev2));
+  border-bottom:20px solid rgba(var(--bgelev2));
+  border-radius:10px;
+  overflow:auto;
+}
+
+vsocials2 .content .posts posts .photo-post {
+  width:100%;
+  height:220px;
+  padding:10px;
+  background:linear-gradient(to right, var(--pastelgradient1));
+  border-radius:10px;
+}
+
+vsocials2 .content .posts posts img {
+  width:100%;
+  height:200px;
+  border:2px solid rgba(var(--bgelev1));
+  border-radius:10px;
+}
+
+vsocials2 .content friends {
+  grid-area:friends;
+  position:relative;
+  display:grid;
+  padding:10px 15px;
+  grid-template-columns: repeat(4,23.5%);
+  grid-gap:10px;
+  border-top:1px solid rgba(var(--bgelev2));
+}
+
+vsocials2 .content friends friend {
+  display:flex;
+  flex-flow:column;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height:175px;
+  padding:10px;
+  background: rgba(var(--bgelev2));
+  border-radius:10px;
+}
+
+vsocials2 .content friends friend img {
+  width:70px;
+  height:70px;
+  padding:10px;
+  background:linear-gradient(to top right, var(--pastelgradient1));
+  border-radius:100%;
+}
+
+vsocials2 .content friends friend name {
+  margin:7px auto 0;
+  font:14px var(--display);
+  color:var(--fontaccent1);
+  text-align:center;
+  line-height:100%;
+  text-decoration: underline;
+  text-decoration-color: rgba(var(--bgelev3));
+}
+
+vsocials2 .content friends friend qinfo {
+  font:800 10px var(--sans);
+  text-transform: uppercase;
+}
+
+vsocials2.indvpost {
+  width:450px;
+}
+
+vsocials2.indvpost .content {
+  grid-area:content;
+  position:relative;
+  display:block;
+  height:auto;
+}
+
+vsocials2.indvpost .content .posts posts .status {
+  max-height:initial;
+}
+
+vsocials2.indvpost .content .posts posts .photo-post, vsocials2.indvpost .content .posts posts img {
+  height:initial;
+}
+
+vsocials2.indvpost .content .posts posts .photo-post {
+  display:block;
+  margin-bottom:17px;
+}
