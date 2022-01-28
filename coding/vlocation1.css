@@ -26,7 +26,7 @@ location1 .about {
   grid-area:about;
   padding:20px;
   margin-bottom:20px;
-  background:rgba(var(--bgelev1));
+  background:rgba(var(--bgelev2));
   border-radius:10px;
 }
 
@@ -35,7 +35,7 @@ location1 .about neighborhood {
   flex-flow:row;
   justify-content: space-between;
   align-items: center;
-  background:rgba(var(--bgelev3));
+  background:rgba(var(--bgelev4));
   padding:10px;
   margin-bottom:5px;
   border-radius:5px;
