@@ -12,7 +12,7 @@ location1 {
   margin:10px auto;
   width:650px;
   text-align:justify;
-  background:rgba(var(--bgelev2));
+  background:rgba(var(--bgelev1));
   border-radius:10px;
 }
 
