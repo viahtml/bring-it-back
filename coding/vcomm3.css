@@ -1,0 +1,136 @@
+vcomm3 {
+  position:relative;
+  display:grid;
+  grid-template-areas:
+    "sender"
+    "contact"
+    "maincontent"
+    "sendbuttons";
+  grid-template-rows: 100px 70px auto 50px;
+  margin:30px auto;
+  width:310px;
+  text-align:justify;
+  background: hsl(var(--mghue2), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--lightness1) + var(--darken)));
+  background-blend-mode: var(--blendmode);
+  box-shadow:0 0 10px 0 rgba(var(--shadow),0.25);
+  border-radius:30px;
+  overflow:hidden;
+}
+
+vcomm3 sender {
+  grid-area:sender;
+  display:flex;
+  flex-flow:row;
+  justify-content:space-between;
+  align-items: center;
+  padding:0 20px;
+  background: hsl(var(--mghue2), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--lightness1) + var(--darken)));
+  background-blend-mode: var(--blendmode);
+  color:rgba(var(--bgelev1));
+  font:800 12px var(--sans);
+  text-transform:uppercase;
+}
+
+vcomm3 sender img {
+  width:40px;
+  height:40px;
+  border-radius:10px;
+}
+
+vcomm3 contact {
+  grid-area:contact;
+  display:flex;
+  flex-flow:row;
+  justify-content:center;
+  align-items: flex-start;
+  margin-top:-20px;
+  padding: 20px;
+  background: hsl(var(--mghue1), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--lightness1) + var(--darken)));
+  color:rgba(var(--bgelev1));
+  font:800 15px var(--sans);
+  text-transform:uppercase;
+  border-radius:30px 30px 0 0;
+  box-shadow:0 0 10px 0 rgba(var(--shadow),0.25);
+}
+
+vcomm3 maincontent {
+  grid-area:maincontent;
+  position:relative;
+  min-height:100px;
+  max-height:400px;
+  margin:-30px 0 0;
+  padding:0 30px;
+  border-top:30px solid rgba(var(--bgelev2));
+  border-bottom:40px solid rgba(var(--bgelev2));
+  background:rgba(var(--bgelev2));
+  border-radius:30px 30px 0 0;
+  box-shadow:0 0 10px 0 rgba(var(--shadow),0.25);
+  overflow:auto;
+}
+
+vcomm3 maincontent .msgs p {
+  float:right;
+  clear:both;
+  margin:3px;
+  padding:15px;
+  font-size:15px;
+  background-color: rgba(var(--bgelev1));
+  border-radius:10px;
+}
+
+vcomm3 b {
+  font-weight:800;
+  color:var(--fontaccent1);
+}
+
+vcomm3 b {
+  font-weight:800;
+  color:var(--fontaccent2);
+}
+
+vcomm3 i {
+  color:var(--fontaccent3);
+}
+
+vcomm3 u {
+  font:18px var(--display);
+  text-decoration-color: var(--fontaccent1);
+  line-height:120%;
+}
+
+vcomm3 a {
+  font-weight:800;
+  font-style:italic;
+  color:var(--fontaccent3)!important;
+}
+
+vcomm3 maincontent .msgs note, vcomm3 maincontent .call note {
+  display:block;
+  margin:10px;
+  text-align:right;
+  clear:both;
+  font:800 10px var(--sans);
+  text-transform:uppercase;
+}
+
+vcomm3 sendbuttons {
+  grid-area:sendbuttons;
+  position:relative;
+  display:flex;
+  flex-flow:row;
+  justify-content: space-between;
+  align-items: center;
+  margin:-20px 0 0;
+  padding:0 30px;
+  font-size:20px;
+  color:rgba(var(--bgelev1));
+  background: hsl(var(--mghue2), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--lightness1) + var(--darken)));
+  background-blend-mode: var(--blendmode);
+  border-radius:30px;
+  box-shadow:0 0 10px 0 rgba(var(--shadow),0.25);
+  overflow:auto;
+}
+
+vcomm3 sendbuttons i.fas {
+  color:rgba(var(--bgelev1));
+}

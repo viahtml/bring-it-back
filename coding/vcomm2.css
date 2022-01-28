@@ -1,0 +1,164 @@
+vcomm2 {
+  position:relative;
+  display:grid;
+  grid-template-areas:
+    "contact"
+    "content"
+    "sendto";
+  grid-template-rows: 150px auto 70px;
+  margin:10px auto;
+  width:400px;
+  text-align:justify;
+  background:rgba(var(--bgelev1));
+  box-shadow:0 0 10px 0 rgba(var(--shadow),0.25);
+  border-radius:20px;
+  overflow:hidden;
+}
+
+vcomm2 contact {
+  position:relative;
+  grid-area:contact;
+  display:flex;
+  flex-flow:row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding:20px;
+  margin:10px;
+  background-color: rgba(var(--bgelev1));
+  background-image: linear-gradient(to top right, var(--pastelgradient1));
+  background-blend-mode: var(--blendmode);
+  border-radius:inherit;
+}
+
+vcomm2 contact your-name {
+  display:flex;
+  flex-flow:column;
+  padding:10px;
+  font:800 20px var(--sans);
+  text-transform:uppercase;
+}
+
+vcomm2 contact your-name small {
+  font:400 13px var(--sans);
+  letter-spacing:1.25px;
+}
+
+vcomm2 contact img {
+  width:70px;
+  height:70px;
+  border-radius:10px;
+  box-shadow:0 0 10px 0 rgba(var(--shadow),0.25);
+}
+
+vcomm2 contact search {
+  position:absolute;
+  bottom:-20px;
+  display:flex;
+  flex-flow:row;
+  justify-content: space-between;
+  align-items: center;
+  width:90%;
+  height:40px;
+  padding:0 20px;
+  font:11px var(--sans);
+  text-transform: uppercase;
+  background-color: rgba(var(--bgelev2));
+  box-shadow:0 0 10px 0 rgba(var(--shadow),0.25);
+  border-radius:inherit;
+}
+
+vcomm2 contact search i {
+  font-size:15px;
+  color:var(--fontaccent2);
+}
+
+vcomm2 .msgs, vcomm2 .call {
+  grid-area:content;
+  position:relative;
+  min-height:50px;
+  max-height:400px;
+  margin:50px 30px 20px;
+  padding-right:10px;
+  overflow:auto;
+}
+
+vcomm2 .msgs p {
+  float:right;
+  clear:both;
+  margin:3px;
+  padding:15px;
+  font-size:15px;
+  background-color: rgba(var(--bgelev2));
+  background-color: rgba(var(--bgelev1));
+  background-image: linear-gradient(to top right, var(--pastelgradient1));
+  background-blend-mode: var(--blendmode);
+  border-radius:10px;
+}
+
+vcomm2 .msgs note, vcomm2 .call note {
+  display:block;
+  margin:10px;
+  text-align:right;
+  clear:both;
+  font:800 10px var(--sans);
+  text-transform:uppercase;
+}
+
+vcomm2 .call note {
+  text-align:center;
+}
+
+vcomm2 .call {
+  font-size:13px;
+}
+
+vcomm2 .call u {
+  font-size:15px;
+}
+
+vcomm2 .msgs b {
+  font-weight:800;
+  color:var(--fontaccent1);
+}
+
+vcomm2 .call b {
+  font-weight:800;
+  color:var(--fontaccent2);
+}
+
+vcomm2 i {
+  color:var(--fontaccent3);
+}
+
+vcomm2 u {
+  font:18px var(--display);
+  text-decoration-color: var(--fontaccent1);
+  line-height:120%;
+}
+
+vcomm2 a {
+  font-weight:800;
+  font-style:italic;
+  color:var(--fontaccent3)!important;
+}
+
+vcomm2 sendto {
+  grid-area:sendto;
+  display:flex;
+  flex-flow:row;
+  justify-content: space-between;
+  align-items: center;
+  margin:10px;
+  padding:10px 20px;
+  font:800 12px var(--sans);
+  text-transform:uppercase;
+  background-color: rgba(var(--bgelev1));
+  background-image: linear-gradient(to top right, var(--pastelgradient1));
+  background-blend-mode: var(--blendmode);
+  border-radius:inherit;
+}
+
+vcomm2 sendto i.fas {
+  font-size:15px;
+  color: rgba(var(--bgelev1));
+}
