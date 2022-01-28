@@ -136,6 +136,7 @@ vdating1 likebuttons {
   background: hsl(var(--mghue2), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--lightness1) + var(--darken)));
   background-blend-mode: var(--blendmode);
   padding:0 30px;
+  margin-top:-20px;
 }
 
 vdating1 likebuttons i.fas {
