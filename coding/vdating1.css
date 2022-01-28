@@ -1,0 +1,182 @@
+vdating1 {
+  position:relative;
+  display:grid;
+  grid-template-areas:
+    "profile"
+    "content"
+    "likebuttons";
+  grid-template-rows: 70px auto 90px;
+  margin:10px auto;
+  width:380px;
+  text-align:justify;
+  background:rgba(var(--bgelev1));
+  box-shadow:0 0 10px 0 rgba(var(--shadow),0.25);
+  border-radius:30px;
+  overflow:hidden;
+}
+
+vdating1 profile {
+  grid-area:profile;
+  display:flex;
+  flex-flow:row;
+  justify-content: space-between;
+  align-items: center;
+  padding:0 20px;
+}
+
+vdating1 profile span {
+  text-transform:uppercase;
+  border-bottom:3px solid var(--fontaccent2);
+}
+
+vdating1 profile i.fas {
+  font-size:15px;
+  color:var(--fontaccent2);
+}
+
+vdating1 content {
+  grid-area:content;
+  display:grid;
+  grid-template-columns: 69% 26%;
+  grid-template-areas:
+    "about emotions"
+    "desc desc";
+  grid-gap:2%;
+}
+
+vdating1 content about {
+  grid-area:about;
+  display:flex;
+  flex-flow:column;
+  justify-content: flex-end;
+  align-items: center;
+  margin:20px;
+  width:250px;
+  height:350px;
+  border-radius:10px;
+}
+
+vdating1 content about name {
+  font:800 25px var(--display);
+  color:rgba(var(--bgelev1));
+  -webkit-text-stroke:0.3px rgba(var(--shadow));
+}
+
+vdating1 content about location {
+  margin:-5px 20px 30px;
+  padding:3px 20px;
+  font:800 12px var(--sans);
+  text-transform:uppercase;
+  color:var(--fontaccent3);
+  background:rgba(var(--bgelev1));
+  border-radius:5px;
+}
+
+vdating1 emotions {
+  grid-area:emotions;
+  display:flex;
+  flex-flow:column;
+  justify-content: center;
+  align-items: center;
+  margin:20px auto;
+}
+
+vdating1 emotions emo {
+  display:flex;
+  flex-flow:column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom:40px;
+}
+
+vdating1 emotions emo:last-child {
+  margin-bottom:0;
+}
+
+vdating1 emotions emo i {
+  margin-bottom:5px;
+  font-size:25px;
+  color:var(--fontaccent1);
+  padding:10px;
+  background:rgba(var(--bgelev3));
+  border-radius:5px;
+  box-shadow:0 0 2px 0 rgba(var(--shadow),0.25);
+}
+
+vdating1 emotions emo:nth-child(2) i {
+  color:var(--fontaccent2);
+}
+
+vdating1 emotions emo:nth-child(3) i {
+  color:var(--fontaccent3);
+}
+
+vdating1 emotions emo span {
+  text-transform:uppercase;
+}
+
+vdating1 .desc {
+  grid-area:desc;
+  margin:0 20px;
+  padding:0 20px;
+  max-height:100px;
+  background:rgba(var(--bgelev3));
+  border-top:20px solid rgba(var(--bgelev3));
+  border-bottom:20px solid rgba(var(--bgelev3));
+  border-radius:10px;
+  overflow:auto;
+}
+
+vdating1 likebuttons {
+  grid-area:likebuttons;
+  display:flex;
+  flex-flow:row;
+  justify-content: space-between;
+  align-items: center;
+  background: hsl(var(--mghue2), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--lightness1) + var(--darken)));
+  background-blend-mode: var(--blendmode);
+  padding:0 30px;
+}
+
+vdating1 likebuttons i.fas {
+  font-size:20px;
+  color:rgba(var(--bgelev1));
+}
+
+vdating1 likebuttons span {
+  text-transform:uppercase;
+  padding:7px 10px;
+  color:var(--fontaccent2);
+  background:rgba(var(--bgelev1));
+  border-radius:5px;
+  box-shadow:0 0 10px 0 rgba(var(--shadow),0.25);
+}
+
+vdating1-swipe {
+  position:relative;
+  display:grid;
+  margin:10px auto;
+  padding:20px;
+  width:380px;
+  text-align:center;
+  background: hsl(var(--mghue3), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--lightness1) + var(--darken)));
+  background-blend-mode: var(--blendmode);
+  box-shadow:0 0 10px 0 rgba(var(--shadow),0.25);
+  border-radius:10px;
+  overflow:hidden;
+}
+
+vdating1-swipe a {
+  color:rgba(var(--bgelev1))!important;
+  text-decoration: none;
+  border-bottom:3px solid rgba(var(--bgelev1));
+}
+
+vdating1-swipe span {
+  display:flex;
+  flex-flow:row;
+  justify-content: space-between;
+  align-items: center;
+  font:800 20px var(--display);
+  text-transform:uppercase;
+}
