@@ -94,7 +94,7 @@ location1 ammenities {
 
 location1 ammenities x {
   padding:5px 10px;
-  background: hsl(var(--mghue2), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--lightness1) + var(--darken)));
+  background: hsl(var(--mghue2), calc(var(--mgsat2) + var(--pastelpercent)), calc(var(--lightness1) + var(--darken)));
   background-blend-mode: var(--blendmode);
   border-radius:5px;
   font:800 11px var(--sans);
