@@ -1,0 +1,98 @@
+vthread7 {
+  position:relative;
+  display: grid;
+  grid-template-areas:
+    "image"
+    "content"
+    "tag";
+  grid-template-rows: 150px auto auto;
+  margin:30px auto;
+  padding:30px;
+  /** margin: top right bottom left; **/
+  width:350px;
+  text-align:justify;
+  background-color: rgba(var(--bgelev1));
+  background-image: linear-gradient(to top right, var(--pastelgradient1));
+  background-blend-mode: var(--blendmode);
+  border-radius:10px;
+  box-shadow:0 0 10px 0 rgba(var(--shadow),0.25);
+  overflow:hidden;
+}
+
+vthread7.rectangle {
+  grid-template-rows: 190px auto auto;
+}
+
+vthread7 img {
+  grid-area: image;
+  margin:30px auto;
+  width:100px;
+  height:100px;
+  object-fit: cover;
+  object-position: center center;
+  border-radius:10px;
+  box-shadow:0 0 10px 0 rgba(var(--shadow),0.25);
+}
+
+vthread7 img.circle {
+  grid-area: image;
+  border-radius:100%;
+}
+
+vthread7.rectangle img {
+  grid-area: image;
+  width:290px;
+  height:140px;
+}
+
+vthread7 .content {
+  grid-area:content;
+  padding:30px;
+  background:rgba(var(--bgelev1));
+  box-shadow:0 0 10px 0 rgba(var(--shadow),0.25);
+  border-radius:inherit;
+}
+
+vthread7 .content overflow {
+  max-height:250px;
+  overflow:auto;
+}
+
+vthread7 .content b {
+  font-size:15px;
+  color:var(--fontaccent1);
+}
+
+vthread7 .content i {
+  font-size:14px;
+  color:var(--fontaccent2);
+}
+
+vthread7 .content u {
+  font:800 17px var(--display);
+  text-decoration-color: var(--fontaccent3);
+}
+
+vthread7 .content a {
+  text-transform: uppercase;
+  text-decoration:none;
+  color:var(--fontaccent3);
+  letter-spacing: 1.25px;
+}
+
+vthread7 tag {
+  grid-area:tag;
+  margin:20px auto 10px;
+  padding:10px 30px;
+  font:800 20px var(--display);
+  /** font: fontweight fontstyle fontsize fontfamily; **/
+  background:rgba(var(--bgelev1));
+  box-shadow:0 0 10px 0 rgba(var(--shadow),0.25);
+  border-radius:inherit;
+}
+
+vthread7 tag span {
+  background-image: linear-gradient(to right, var(--fontgradient));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(var(--bgelev1), 0);
+}
