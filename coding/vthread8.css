@@ -1,0 +1,100 @@
+vthread8 {
+  position:relative;
+  display:grid;
+  grid-template-areas:
+    "tag content"
+    "image content"
+    "image content";
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 250px calc(100% - 250px);
+  margin:30px auto;
+  width:680px;
+  height:500px;
+  background:rgba(var(--bgelev1));
+  text-align:justify;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow),0.25);
+  border-radius:10px;
+  overflow:hidden;
+}
+
+vthread8 tag {
+  position:relative;
+  grid-area:tag;
+  padding:30px;
+  font:800 25px var(--display);
+  text-decoration: underline;
+  text-decoration-color: var(--fontaccent2);
+  z-index:2;
+}
+
+vthread8 tag::before {
+  position:absolute;
+  left:-10px;
+  top:-10px;
+  content:'\f292';
+  font-family: 'Font Awesome 5 Pro';
+  font-weight:900;
+  font-size:90px;
+  color:var(--fontaccent3);
+  opacity:0.5;
+  z-index:-1;
+}
+
+vthread8 content-body {
+  grid-area:content;
+  background:linear-gradient(to top right, var(--pastelgradient1));
+}
+
+vthread8 content-body .content {
+  grid-area:content;
+  margin:30px;
+  padding:0 20px;
+  height:440px;
+  border-top:20px solid rgba(var(--bgelev1));
+  border-bottom:20px solid rgba(var(--bgelev1));
+  text-indent: 30px;
+  background:rgba(var(--bgelev1));
+  border-radius:10px;
+  overflow:auto;
+}
+
+vthread8 .content b {
+  font:800 15px var(--display);
+  color:var(--fontaccent1);
+}
+
+vthread8 .content i {
+  color:var(--fontaccent2);
+}
+
+vthread8 .content u {
+  font:800 15px var(--display);
+  text-decoration: underline;
+  text-decoration-color: var(--fontaccent2);
+}
+
+vthread8 .content a {
+  font:800 15px var(--sans);
+  color:var(--fontaccent3);
+}
+
+vthread8 image-body {
+  grid-area:image;
+  position:absolute;
+  bottom:0px;
+  display:flex;
+  flex-flow:row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width:220px;
+  height:320px;
+  background:linear-gradient(to top right, var(--pastelgradient1));
+  border-radius:0 10px 0 0;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow),0.25);
+}
+
+vthread8 image-body img {
+  width:200px;
+  height:300px;
+  border-radius:0 10px 0 0;
+}
